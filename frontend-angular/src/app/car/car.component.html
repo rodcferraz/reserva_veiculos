@@ -1,0 +1,76 @@
+<div class="panel panel-default" style="width: 1200px; margin-top: -200px;">
+    <div class="panel-body">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-4" style="padding:0px">
+                                
+                                    <div class="form-group">
+                                        <label >Name</label>
+                                        <input type="text" class="form-control"/>
+                                    </div>
+                            </div>       
+                            <div class="col-md-4">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label >Brand</label>
+                                        <input type="text" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label >Year</label>
+                                        <input type="text" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">Buscar</button>
+                                </div>
+                                
+                            </div>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        
+    
+      
+        <div class="form-row">
+            <div class="form-group">
+                <button type="button" class="btn btn-success">Adicionar</button>
+            </div>
+        </div> 
+        
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th class="col-md-3">Name</th>
+                    <th class="col-md-7">Brand</th>
+                    <th class="col-md-7">Year</th>
+                    <th class="col-md-2">Ações</th>
+                </tr>
+                <tr *ngFor="let car of cars; let i = index">
+                    <td>{{car.name}}</td>
+                    <td>{{car.brand}}</td>
+                    <td>{{car.year}}</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Deletar</button>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+</div>
+</div>

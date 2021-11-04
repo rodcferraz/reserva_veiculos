@@ -1,0 +1,21 @@
+<div class="alert alert-danger" *ngIf="error">
+    <strong>{{error}}</strong>
+  </div>
+
+<h3>Register</h3>
+
+<div class="panel panel-default" style="width: 500px">
+    <div class="panel-body">
+        <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text"[(ngModel)]="name" >
+            <label>Password</label>
+            <input class="form-control" type="password" [(ngModel)]="password" >
+            <label>Repeat Password</label>
+            <input class="form-control" type="password" [(ngModel)]="repeatPassword" >
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-success" type="button" (click)="register()">Register</button>
+        </div>  
+    </div>
+</div>
